@@ -807,20 +807,26 @@
 			}
 			</style>
 			<script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script> 
-
 			<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 			<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 
             <li class="project-item  active" data-filter-item data-category="web design">
               <a href="#">
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
+
+				
+				<model-viewer class="project-img"
+				src="https://rawcdn.githack.com/PDFTron/webviewer-3d-sample/2d04693c928057672bfe6c0002a63b69ba77cdbf/public/assets/car/scene.gltf"
+				shadow-intensity="1"
+				disable-zoom
+				camera-controls
+				auto-rotate
+				alt="fundo" loading="lazy"
+				>
+				  <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
+				</model-viewer>
 
                 <h3 class="project-title">Fundo</h3>
 
@@ -832,14 +838,13 @@
             <li class="project-item  active" data-filter-item data-category="applications">
               <a href="#">
 
-				<model-viewer
-					src="https://rawcdn.githack.com/PDFTron/webviewer-3d-sample/2d04693c928057672bfe6c0002a63b69ba77cdbf/public/assets/car/scene.gltf"
-					shadow-intensity="1"
-					disable-zoom
-					camera-controls
-					auto-rotate
-				>
-				</model-viewer>
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
 
                 <h3 class="project-title">Brawlhalla</h3>
 
