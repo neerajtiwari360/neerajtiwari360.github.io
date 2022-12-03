@@ -786,6 +786,30 @@
 
               </a>
             </li>
+			
+			 
+
+
+			<style>
+			model-viewer{
+				width:100%;
+				height: 70vh;
+			}
+			@media (max-width: 1024px) {
+			model-viewer{
+				height:600px;
+			}
+			}
+			@media (max-width: 767px) {
+			model-viewer{
+				height:350px;
+			}
+			}
+			</style>
+			<script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script> 
+
+			<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+			<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 
             <li class="project-item  active" data-filter-item data-category="web design">
               <a href="#">
@@ -808,13 +832,14 @@
             <li class="project-item  active" data-filter-item data-category="applications">
               <a href="#">
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
+				<model-viewer
+					src="https://rawcdn.githack.com/PDFTron/webviewer-3d-sample/2d04693c928057672bfe6c0002a63b69ba77cdbf/public/assets/car/scene.gltf"
+					shadow-intensity="1"
+					disable-zoom
+					camera-controls
+					auto-rotate
+				>
+				</model-viewer>
 
                 <h3 class="project-title">Brawlhalla</h3>
 
@@ -930,7 +955,7 @@
       <article class="blog" data-page="blog">
 
         <header>
-          <h2 class="h2 article-title">Blog</h2>
+          <h2 class="h2 article-title">R&D</h2>
         </header>
 
         <section class="blog-posts">
